@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const url = 'mongodb+srv://athar:athar123@task-manager-cluster.w1cta.mongodb.net/task-manager-api?retryWrites=true&w=majority'
+const url = require('../../Utilities');
 mongoose.connect(url,{useNewUrlParser:true,useCreateIndex:true},(e,r)=>{
   if(e){
     return console.log(e)
